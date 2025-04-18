@@ -1,0 +1,108 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+input#qr-input {
+  padding: 12px 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input#qr-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+}
+
+/* All Buttons - Warm and modern */
+button {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+button:hover {
+  background: linear-gradient(135deg, #fda085, #f6d365);
+  box-shadow: 0 6px 18px rgba(253, 160, 133, 0.6);
+}
+
+#qr-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#qr-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#download-btn {
+  background: linear-gradient(135deg, #22c55e, #16a34a); /* Tailwind Green 500 → 600 */ /* hidden by default */
+}
+
+#download-btn.hidden {
+  display: none;
+}
+
+#download-btn.show {
+  display: inline-block;
+}
+
+#download-btn:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d); /* Darker on hover */
+  box-shadow: 0 6px 18px rgba(34, 197, 94, 0.4);
+}
+
+#generate-btn {
+  background: linear-gradient(135deg, #3b82f6, #2563eb); /* Tailwind Blue 500 → 600 */
+}
+
+#generate-btn:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8); /* Darker on hover */
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.4);
+}
